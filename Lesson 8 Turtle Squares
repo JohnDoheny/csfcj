@@ -1,0 +1,16 @@
+from turtle import*
+
+def draw_square(sideLength):
+    
+    for i in range(4):
+        forward(sideLength)
+        left(90)
+        
+draw_square(60)
+draw_square(80)
+draw_square(100)
+draw_square(120)
+draw_square(140)
+draw_square(160)
+
+turtle.done()
