@@ -1,1 +1,4 @@
-
+personName = input()
+favouriteColour = input()
+print("Hi", personName, "- your favourite colour is", favouriteColour)
+print("Goodbye", personName)
