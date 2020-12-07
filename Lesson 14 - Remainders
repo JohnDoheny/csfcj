@@ -16,6 +16,10 @@ print(5 % 12)  # displays 5 because 5 divided by 12 leaves a remainder of 5
 
 
 '''
+
+#you have been crygenically frozen, it will take 850,000 hours to thraw you out.
+#this is about 97 years but you really want to know if you will be awake for Peppa Pig which is on at 14:00 hours.
+#will you miss Peppa Pig?
 # The time is 21:00.
 # What time will it be in 850,000 hours?
 arrivalTime = (21 + 850000) % 24
