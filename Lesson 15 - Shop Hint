@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+total = costOfMars+costOfCoke+costOfTea+costOfCrisps+costOfBread
+print("The total cost is", total)
