@@ -1,0 +1,46 @@
+#HTML
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+<input id = "nameIn" placeholder="Name"></input>
+<input id = "ageIn" placeholder="Age"></input>
+<button onclick="addData()">Add data to List</button>
+</br>
+    <h4>Average Age: <a id="avgDisplay">__</a></h4>
+</br>
+Output:
+</br>
+<textarea id="outDisplay" readonly></textarea>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+#Java
+var myNames=[];
+var myAges=[];
+var nameEle=document.getElementById("nameIn");
+var ageEle=document.getElementById("ageIn");
+var outEle=document.getElementById("outDisplay");
+var outAvg=document.getElementById("avgDisplay");
+
+function addData(){
+    myNames.push(nameEle.value);
+    myAges.push(ageEle.value);
+    displayData();
+}
+
+function displayData(){
+    outEle.value="";
+    for(var index=0; index<myNames.length; index+=1)
+    {outEle.value += myNames[index] +"\t\t" + myAges[index] +"\n";}
+    calcAverage();
+}
+function calcAverage(){
+    var sum=0;
+    for(var index=0; index<myAges.length; index+=1){sum+=parseInt(myAges[index]);
+}
+    var average=sum / myAges.length;
+    outAvg.innerHTML=average;
+}
