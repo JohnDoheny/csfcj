@@ -16,7 +16,7 @@
 
 /*Here we are setting the contraints for the "for" statement
 1.variable created called var and its set to start at 0 
-2.counter to go to all the numbers less than 9 (0 - 8)
+2. Boolean Expression, so counter to go to all the numbers less than 9 (0 - 8), 
 3.And the counter is to move up in increments of 1 each time
 */
 for(var counter=0; counter<9; counter+=1){
