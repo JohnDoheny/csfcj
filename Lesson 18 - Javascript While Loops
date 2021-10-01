@@ -1,0 +1,24 @@
+#HTML
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+<h1 id = "outDisplay"></h1>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+#Java
+
+var counter=0
+// here we are asking asking to count until we reach 9 (<=10 would have given us 10 aswell)
+while(counter<10){
+/*Here we are linking with "outDisplay" in the HTML, .innerHTML is going to update your HTML page with a count that goes up in increments. 
+After each count, it will </br> (line break)*/
+ document.getElementById("outDisplay").innerHTML+=counter+"</br>";
+ //next we are asking it to increase by 1 increment each time
+   counter+=1;
+}
