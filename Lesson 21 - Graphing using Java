@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+    </head>
+    <body>
+        <input id="hIn"placeholder="Heights">
+        <button onclick="addData()">Add Data To List</button>
+        <div id="plotlyGraph" style="width:90%"></div>
+        
+    </body>
+</html>
+
+
+<script>
+    var myHeights=[];
+    var hEle= document.getElementById("hIn");
+
+function addData(){myHeights.push(hEle.value);
+drawPlotly();
+}
+function drawPlotly(){
+    // Data
+    var heights={y: myHeights, name: "Height", mode: 'lines+markers'};
+
+    //Graph Labels
+    var layout={
+        title: 'Students Heights', xaxis: {title: 'Each Student'}, yaxis: {title: 'height (metres)'}
+    };
+
+    var data =[heights];
+
+    //Draw Graph
+    Plotly.newPlot('plotlyGraph', data, layout);
+}
+
+</script>
